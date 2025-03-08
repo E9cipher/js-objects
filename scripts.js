@@ -10,14 +10,15 @@ const solutions = {
     "input5": "hang out",
     "input6": "keep",
     "input7": "grow",
-    "input8": "answer_8",
-    "input9": "answer_9",
-    "input10": "answer_10",
-    "input11": "answer_11",
-    "input12": "answer_12",
-    "input13": "answer_13",
-    "input14": "answer_14",
-    "input15": "answer_15"
+    "input8": "forward",
+    "input9": "set",
+    "input10": "take",
+    "input11": "break",
+    "input12": "check",
+    "input13": "get",
+    "input14": "fill",
+    "input15": "let",
+    "input16": "hold",
 }
 
 /* As we're no longer displaying the results in the HTML, we can remove this function
