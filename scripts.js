@@ -2,6 +2,7 @@ var input = document.querySelectorAll("input");
 var restartBtn = document.getElementById("btnrestart");
 var validateBtn = document.getElementById("btnvalidate");
 var answersBtn = document.getElementById("btnshowanswers");
+var infoIcon = document.querySelectorAll("#info");
 const solutions = {
     "input1": "carried",
     "input2": "figured",
@@ -20,6 +21,19 @@ const solutions = {
     "input15": "let",
     "input16": "hold",
 }
+
+input.forEach(input => {
+    input.addEventListener("input", function() {
+        if (input.value === "") {
+            validateBtn.setAttribute("disabled", "disabled");
+        } else {
+            validateBtn.removeAttribute("disabled");
+        }
+    });
+});
+
+// Edit the tooltip on each input field based on the data-tooltip on each icon
+
 
 /* As we're no longer displaying the results in the HTML, we can remove this function
 function styling(str) {
